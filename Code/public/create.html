@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Multiplatter </title>
+</head>
+<body>
+<!-- ===================================================================================== -->
+<!-- Display the current status of the database connection.
+     !!HERE TO HELP U DEBUGGING, NOT REQUIRED IN YOUR OWN PROJECT!!
+     -->
+<!--    <h6>Database Connection Status:-->
+<!--        &lt;!&ndash; An in-line placeholder to display connection status. &ndash;&gt;-->
+<!--        <span id="dbStatus"> </span>-->
+<!--        &lt;!&ndash; A loading GIF, will be hided once get the status. &ndash;&gt;-->
+<!--        <img id="loadingGif" class="loading-gif" src="loading_100px.gif" alt="Loading...">-->
+<!--    </h6>-->
+
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="sidebar.js"></script>
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<h1><u>CREATE NEW RECIPE</u></h1>
+
+<section id="newRecipeContainer">
+    <form id="newRecipe">
+        <label for="newRecipeTitle" class="newRecipeLabel">Title</label>
+        <input type="text" class="newRecipeInput" id="newRecipeTitle" placeholder="Enter Title">
+
+        <label for="newRecipeRecipeDescription" class="newRecipeLabel">Description</label>
+        <input type="text" class="newRecipeInput" id="newRecipeRecipeDescription" placeholder="Enter Description">
+
+        <label for="newRecipeRecipeCategory" class="newRecipeLabel">Category</label>
+        <input type="text" class="newRecipeInput" id="newRecipeRecipeCategory" placeholder="Enter Category">
+
+        <button type="submit" id="newRecipeB"> Submit</button>
+        <div id="insertResultMsgSU"></div>
+    </form>
+</section>
+
+<footer class="Footer">
+    <div class="footerText"> Contact Info:</div>
+</footer>
+
+<!-- ===================================================================================== -->
+<!-- External JavaScript file that contains the functionality/logic for the operations above. -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Multiplatter </title>
+</head>
+<body>
+
+<!--   SIDEBAR-->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="scripts.js"></script>
+<script src="sidebar.js"></script>
+<script src="searchbar.js"></script>
+
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<h1><u>HOME</u></h1>
+
+<section class="slideshow" id="HomeSlideshow">
+    <div class="slideHeader">POPULAR RECIPES</div>
+    <div class="slides" >
+        <div class="slide">
+            <div class="slideRecipe">
+                <img src="images/img_curry.jpg">
+                <div class="slideCaption"> Spicy Chicken Curry</div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slideRecipe"> <img src="images/img_cake.jpg">
+                <div class="slideCaption"> Classic Chocolate Cake </div></div>
+        </div>
+        <div class="slide">
+            <div class="slideRecipe">  <img src="images/img_lemon.jpg">
+                <div class="slideCaption"> Lemon Drizzle Cake </div></div>
+        </div>
+        <div class="slide">
+            <div class="slideRecipe"><img src="images/img_pasta.jpg">
+                <div class="slideCaption"> Spaghetti Bolognese </div></div>
+        </div>
+        <div class="slide">
+            <div class="slideRecipe"><img src="images/img_taco.jpg">
+                <div class="slideCaption"> Vegan Tacos </div></div>
+        </div>
+        <div class="slide">
+            <div class="slideRecipe"> <img src="images/img_toast.jpg">
+                <div class="slideCaption"> Avocado Toast </div></div>
+        </div>
+    </div>
+</section>
+
+<br>
+<div class="topUser">
+    <div id="topUser">TOP USER</div>
+    <div id="topUserVal"></div>
+</div>
+<br>
+<div class="topRecipe">
+    <button id="topRecipe">TOP Recipe</button>
+    <div id="topRecipeVal"></div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<section>
+    <footer class="Footer">
+        <div class="footerText"> Contact Info:</div>
+    </footer>
+</section>
+
+</body>
+</html>

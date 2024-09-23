@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Saved Recipes</title>
+</head>
+<body>
+<!-- SIDEBAR -->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="scripts.js"></script>
+<script src="sidebar.js"></script>
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<section id="savedRecipesContainer">
+    <h2 class="center">My Saved Recipes</h2>
+    <div id="savedRecipesList"></div>
+</section>
+
+<script src="/savedRecipes.js"></script>
+
+<footer class="Footer">
+    <div class="footerText"> Contact Info:</div>
+</footer>
+</body>
+</html>

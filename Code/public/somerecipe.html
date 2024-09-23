@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="/styles.css">
+    <title>Multiplatter </title>
+</head>
+<body>
+<!-- ===================================================================================== -->
+<!-- Display the current status of the database connection.
+     !!HERE TO HELP U DEBUGGING, NOT REQUIRED IN YOUR OWN PROJECT!!
+     -->
+<!--    <h6>Database Connection Status:-->
+<!--        &lt;!&ndash; An in-line placeholder to display connection status. &ndash;&gt;-->
+<!--        <span id="dbStatus"> </span>-->
+<!--        &lt;!&ndash; A loading GIF, will be hided once get the status. &ndash;&gt;-->
+<!--        <img id="loadingGif" class="loading-gif" src="loading_100px.gif" alt="Loading...">-->
+<!--    </h6>-->
+
+<!--   SIDEBAR-->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="../index.html">HOME</a>
+    <a href="../aboutus.html">ABOUT US</a>
+    <a href="../create.html">CREATE</a>
+    <a href="../recipes.html">RECIPES</a>
+    <a href="../groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="../signIn.html">SIGN IN</a> <!-- Placeholder for login -->
+    <a id="profileLink" href="../profile.html" style="display:none;">PROFILE</a> <!-- Placeholder for profile -->
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a> <!-- Placeholder for logout -->
+</div>
+<script src="/sidebar.js" defer></script>
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+
+<!--<p id="img">Please wait while we load the content.</p> PLACE HOLDER FOR IMG-->
+
+<div class="recipe-header">
+    <h1 id="title">Recipe Name</h1>
+    <p id="description">Description of the recipe goes here.</p>
+    <p id="creator">Please wait while we load the content.</p>
+    <p id="id">Please wait while we load the content.</p>
+    <div class="recipe-info">
+        <span id="avg-rating">Avg Rating</span>
+        <span id="category">Category</span>
+
+        <section id="tag-container">
+            <span id="tag-list"></span>
+        </section>
+    </div>
+</div>
+
+
+<!--    <div class="image-container">-->
+<!--        <img src="path/to/image.jpg" alt="Recipe Image" class="recipe-image">-->
+<!--    </div>-->
+
+<h3>Ingredients</h3>
+<div class="ingredients">
+    <section id="ingredient-container">
+        <div id="ingredient-list"></div>
+    </section>
+</div>
+
+<h3>Equipment</h3>
+<div class="equipment">
+    <section id=equipment-container">
+        <div id="equipment-list"></div>
+    </section>
+</div>
+
+<h3>Instruction Steps</h3>
+<div class="instructions">
+    <section id="instruction-container">
+        <div id="instruction-list"></div>
+    </section>
+</div>
+
+<h3>Comments</h3>
+<div class="comments">
+    <p id="noComments">No comments yet. Be the first to comment!</p>
+    <section id="comment-section">
+        <div id="comment-list"></div>
+    </section>
+</div>
+
+<script>
+    console.log('somerecipe.html is running');
+</script>
+<script src="/somerecipe.js" defer></script>
+<script src="admin.js"></script>
+<script src="profile.js"></script>
+<script src="scripts.js"></script>
+
+
+<footer class="Footer">
+    <div class="footerText"> Contact Info:</div>
+</footer>
+
+</body>
+</html>

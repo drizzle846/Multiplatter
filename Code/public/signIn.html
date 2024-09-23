@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Multiplatter</title>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="sidebar.js"></script>
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<h1><u>LOG IN/SIGN UP</u></h1>
+
+<section id="signInContainer">
+    <div class="tabButton">
+        <button class="tab" onclick="showLoginForm()">LOG IN</button>
+        <button class="tab" onclick="showSignUpForm()">SIGN UP</button>
+    </div>
+    <form id="loginform" style="display: none;">
+        <h2> LOG IN</h2>
+        <label class="signinLabel">Username</label>
+        <input type="text" id="logInU" placeholder="Enter username" required>
+        <label class="signinLabel">Password</label>
+        <input type="password" id="logInP" placeholder="Enter password" required>
+        <div id="insertResultMsgU"></div>
+        <button type="submit" id="loginB"> Submit</button>
+    </form>
+    <form id="signUpform" style="display: none;">
+        <h2> SIGN UP</h2>
+        <label for="signUpC" class="signinLabel">City</label>
+        <input type="text" class="signUpInput" id="signUpC" placeholder="Enter city">
+        <label for="signUpPr" class="signinLabel">Province/State</label>
+        <input type="text" class="signUpInput" id="signUpPr" placeholder="Enter province/state">
+        <label for="signUpU" class="signinLabel">Username</label>
+        <input type="text" class="signUpInput" id="signUpU" placeholder="Enter username" required>
+        <label for="signUpP" class="signinLabel">Password</label>
+        <input type="password" class="signUpInput" id="signUpP" placeholder="Enter password" required>
+        <label for="signUpPn" class="signinLabel">Phone Number</label>
+        <input type="number" class="signUpInput" id="signUpPn" placeholder="Enter phone number" required>
+        <label for="signUpE" class="signinLabel">Email</label>
+        <input type="email" class="signUpInput" id="signUpE" placeholder="Enter email" required>
+        <label for="signUpN" class="signinLabel">Name</label>
+        <input type="text" class="signUpInput" id="signUpN" placeholder="Enter name">
+        <button type="submit" id="signupB"> Submit</button>
+        <div id="insertResultMsgSU"></div>
+    </form>
+</section>
+
+<script src="scripts.js"></script>
+
+<section>
+    <footer class="Footer">
+        <div class="footerText"> Contact Info:</div>
+    </footer>
+</section>
+
+</body>
+</html>

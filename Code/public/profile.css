@@ -1,0 +1,174 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #C4E8A5;
+    color: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.Header {
+    background-color: #3B4D2B;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.headerText {
+    margin-top: 25px;
+    font-family: Copperplate;
+    font-size: 50px;
+    color: #E1E8C2;
+    text-align: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #7EA35F;
+    transition: 0.3s;
+    padding-left: 5px;
+    z-index: 2; /* Ensure sidebar is above main content */
+}
+
+.sidebar a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Arial Black";
+    border: 5px solid;
+    width: 170px;
+    border-color: #E1E8C2;
+    border-radius: 7px;
+    color: #333333;
+    background-color: #E1E8C2;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#toggleSidebarBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#closeSidebarBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar.open {
+    left: 0; /* Show the sidebar */
+}
+
+.sidebar .logo {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile container styles */
+#profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 210px;
+    margin-right:10px;
+    padding: 100px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    background-color: #D9FBBB;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Georgia;
+}
+
+#profileContainer p {
+    margin: 10px 0;
+}
+
+
+footer {
+    background-color: #1D2516;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    color: darkgrey;
+    font-size: 15px;
+}
+.profilelink {
+    padding: 10px;
+    background-color: #3B4D2B;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-family: Georgia;
+    text-decoration: none;
+}
+
+#deleteAccountContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 210px;
+    margin-right:10px;
+    padding: 100px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    background-color: #D9FBBB;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Georgia;
+}
+
+#updateAccountContainer {
+    display: block;
+    align-items: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 210px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    padding: 100px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    background-color: #D9FBBB;;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Georgia;
+}

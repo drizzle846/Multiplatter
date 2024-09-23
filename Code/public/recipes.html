@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="styles.css">
+    <script src = "allrecipes.js"></script>
+    <title>Multiplatter </title>
+</head>
+<body>
+
+<!--   SIDEBAR-->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="scripts.js"></script>
+<script src="sidebar.js"></script>
+
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<h1><u>RECIPES</u></h1>
+
+
+
+<div class="filter" id="filter">
+        <div class="filterBar" id="filterBar">
+            <select class="options">
+                <optgroup label="descriptors" class="descriptors">
+<!--                    <option value="">all</option>-->
+                    <option value="breakfast">breakfast</option>
+                    <option value="lunch">lunch</option>
+                    <option value="dinner">dinner</option>
+                    <option value="dessert">dessert</option>
+                    <option value="spicy">spicy</option>
+                    <option value="quick">quick</option>
+                </optgroup>
+            </select>
+            <select class="ratings" id="ratings">
+                <option value=""></option>
+                <option value="4">4+</option>
+                <option value="3">3+</option>
+                <option value="2">2+</option>
+            </select>
+            <button id="addFilterButton" >+</button>
+            <button id="apply" >GO</button>
+        </div>
+    <p>You can choose to filter further!</p>
+</div>
+<br>
+<div class="quickRecipe">
+    <div id="quickRecipe">QUICK Recipe</div>
+    <div id="quickRecipeVal"></div>
+</div>
+<br>
+<div id="recipes-container"></div>
+<br>
+<br>
+
+
+<footer class="Footer">
+    <div class="footerText"> Contact Info:</div>
+</footer>
+
+<script src="scripts.js"></script>
+<script src="searchbar.js"></script>
+</body>
+</html>

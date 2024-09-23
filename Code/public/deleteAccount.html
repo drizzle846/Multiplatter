@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This meta tag ensures that the website renders correctly across different device sizes, enhancing mobile responsiveness. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to the external CSS stylesheet. Uncomment if you wish to customize or add styling. -->
+    <link rel="stylesheet" href="profile.css">
+
+    <title>Multiplatter </title>
+</head>
+<body>
+<!--   SIDEBAR-->
+<button id="toggleSidebarBtn">☰</button>
+<div class="sidebar" id="sidebar">
+    <button id="closeSidebarBtn">X</button>
+    <p class="logo">Logo</p>
+    <a href="index.html">HOME</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="create.html">CREATE</a>
+    <a href="recipes.html">RECIPES</a>
+    <a href="groceryStores.html">GROCERY STORES</a>
+    <a id="loginLink" href="signIn.html">SIGN IN</a>
+    <a id="profileLink" href="profile.html" style="display:none;">PROFILE</a>
+    <a id="adminLink" href="admin.html" style="display:none;">ADMIN</a>
+    <a id="logoutLink" href="#" style="display:none;">LOGOUT</a>
+</div>
+<script src="scripts.js"></script>
+<script src="sidebar.js"></script>
+<script src="deleteAccount.js"></script>
+
+<header class="Header">
+    <div class="headerText">Multiplatter</div>
+</header>
+
+<div id="deleteAccountContainer">
+    <form id="deleteform">
+        <h2> DELETE ACCOUNT</h2>
+        <label class="signinLabel">Phone Number</label>
+        <input type="number" id="deletePn" placeholder="Enter phone number" required>
+<!--        <label class="signinLabel">Username</label>-->
+<!--        <input type="text" id="deleteU" placeholder="Enter username">-->
+<!--        <label class="signinLabel">Password</label>-->
+<!--        <input type="password" id="deleteP" placeholder="Enter password">-->
+        <div id="insertResultMsgD"></div>
+        <button type="submit" id="loginB"> Submit</button>
+    </form>
+</div>
+
+<script src="/profile.js"></script>
+
+
+<footer class="Footer">
+    <div class="footerText"> Contact Info:</div>
+</footer>
+
+</body>
+</html>
