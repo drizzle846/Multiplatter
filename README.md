@@ -16,4 +16,7 @@ other people’s reviews of a particular recipe
 - Brandan:
   - bbang
 - Nikita:
-  - nikipdsci     
+  - nikipdsci
+
+About the Project: 
+https://docs.google.com/document/d/1uUtxicI5_dID2YFqIDhcd5znQCC0RKI6gVErnOTWSLQ/edit?tab=t.0
